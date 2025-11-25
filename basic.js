@@ -50,16 +50,39 @@ const m = "ESFP";
 sayhello(n, m);
 
 // return (반환)
-function sum(num1, num2) {
-  // 두개의 값을 더한값 반환
-  return num1 + num2;
-}
+//function sum(num1, num2) {
+// 두개의 값을 더한값 반환
+//  return num1 + num2;
+//}
 
-function double(num) {
-  return num * 2;
-}
+//function double(num) {
+//  return num * 2;
+//}
+
+// 화살표함수 기본 구문 const sum = () => {}
+
+const sum = (num1, num2) => num1 + num2;
 
 // 함수 호출
 const result = sum(22, 40);
 console.log("🚀 ~ result:", result);
-console.log("double", double(result));
+
+// 미션 : upperString 라는 화살표 함수 만들기
+// 기능 1. 파라미터로 받아온 문자열을 대문자로 변환
+//      2. 변환한 문자열을 반환
+// 실행 : toUpper("chutzrit")
+
+// "chutzrit".toUpperCase();
+
+// 함수 정의
+
+const upperString = (text) => {
+  // 1. 파라미터로 받아온 문자열을 대문자로 변환
+  const upper = text.toUpperCase();
+  // 2. 변환한 문자열을 반환
+  return upper;
+};
+
+const resultString = upperString("chutzrit");
+console.log("🚀 ~ resultString:", resultString);
+console.log("upperString : ", upperString("dasom"));
