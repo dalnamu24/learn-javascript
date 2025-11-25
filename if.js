@@ -67,3 +67,11 @@ const person = {
 console.log("0번째 데이터", person["NAME"]);
 console.log("COMPANY", person["COMPANY"]);
 console.log("COMPANY", person.COMPANY); // 닷 표기법 권장 ⭐
+
+const messageInfo = {
+  userImage:
+    "https://img.sportsworldi.com/content/image/2025/09/19/20250919507036.jpg",
+  userName: "맛있는 쉐프",
+  message: "안녕하세요.",
+  role: "assistant", // role 에는 assistant(챗봇) 와 user(유저메세지) 가 있다.
+};
