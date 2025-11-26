@@ -66,7 +66,7 @@ console.log("🚀 ~ copyIngredients:", copyIngredients);
 
 const copyTodoItem = {
   ...todoItem,
-  description: "React 공부 할거에요",
-  isComplete: true,
+  description: "React 공부 할거에요", // 없는 데이터는 추가가 되고
+  isComplete: true, // 있는 데이터는 추가로 입력한 값으로 수정이 된다.
 };
 console.log("🚀 ~ copyTodoItem:", copyTodoItem);
